@@ -7,7 +7,7 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'goshare';
+  title = 'shareTruck';
 
   ngOnInit(): void {
     initFlowbite();

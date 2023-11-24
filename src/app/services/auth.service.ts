@@ -22,6 +22,7 @@ export class AuthService {
       const res = await axios.post(`${this.url}signup`, userData, this.config);
       return res.data;
     } catch (error: any) {
+      console.log(error)
       return error;
     }
   }
@@ -41,6 +42,7 @@ export class AuthService {
   }
 
   profile = async (): Promise<Profile> => {
+    console.log('get profile')
     try {
       const res = await axios.get(`${this.url}profile`, this.config);
       return res.data;
